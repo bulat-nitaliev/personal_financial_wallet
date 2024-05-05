@@ -1,7 +1,7 @@
 #### Склонировать проект
 
 ```shell
-  git clone
+  git clone https://github.com/bulat-nitaliev/personal_financial_wallet.git
   ```
 
 #### Запустить файл
