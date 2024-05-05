@@ -1,6 +1,6 @@
 from model import Record, Correct
 
-
+name_file = input('Введите имя файла с расширением для записей (необязательно - по умолчанию accounting.txt) ')
 def menu():
     print('''
 1. Вывести баланс
@@ -9,7 +9,8 @@ def menu():
 4. Поиск
 5. Выход
 ''')
-    record = Record()
+
+    record = Record(name_file) if name_file else Record()
     correct = Correct()
     choice = input('Введите номер пункта меню: ')
     print()
